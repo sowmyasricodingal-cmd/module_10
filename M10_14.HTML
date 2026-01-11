@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details Form</title>
+</head>
+<body>
+
+    <h1>Personal Details Form</h1>
+
+    <form action="#" method="post">
+
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Contact Number (masked with type password) -->
+        <label for="contact">Contact Number:</label>
+        <input type="password" id="contact" name="contact" placeholder="Enter digits only" required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Favourite City -->
+        <label for="city">Favourite City:</label>
+        <select id="city" name="city">
+            <option value="newyork">New York</option>
+            <option value="london">London</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="sydney">Sydney</option>
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!-- Comment explaining form fields -->
+    <!-- 
+        <form> defines the form
+        type="text" for name
+        type="email" for email
+        type="password" to mask contact number
+        radio buttons for gender selection
+        select and option for dropdown list of cities
+    -->
+
+</body>
+</html>
